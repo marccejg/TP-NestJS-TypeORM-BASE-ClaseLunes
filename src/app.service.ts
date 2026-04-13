@@ -31,7 +31,7 @@ export class AppService {
       throw new NotFoundException(`Usuario con ID ${id} no encontrado`);
     }
     await this.userRepository.update(id, updateUser);
-    return this.findOne(id)+ `usuario  con ID ${user.id} actualizado exitosamente`;
+    return this.findOne(id)   + `usuario  con ID ${user.id} actualizado exitosamente`;
   }
 
   async remove(id: number) {
